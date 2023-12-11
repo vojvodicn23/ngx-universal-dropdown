@@ -61,7 +61,7 @@
   }
 
   .dropdown-content {
-    width: 100%;
+    width: fit-content;
     border-radius: 8px;
     display: none;
     position: absolute;

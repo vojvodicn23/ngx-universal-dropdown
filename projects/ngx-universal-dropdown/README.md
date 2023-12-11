@@ -1,24 +1,33 @@
-# NgxUniversalDropdown
+# Angular Universal Dropdown
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name --project ngx-universal-dropdown` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-universal-dropdown`.
-> Note: Don't forget to add `--project ngx-universal-dropdown` or else it will be added to the default project in your `angular.json` file. 
+Add the package as a dependency to your project using:
+> npm install ngx-universal-dropdown
 
-## Build
+Add module to you app.module imports:
 
-Run `ng build ngx-universal-dropdown` to build the project. The build artifacts will be stored in the `dist/` directory.
+>import { NgxUniversalDropdownModule } from 'ngx-universal-dropdown';
+>...
+>
+>@NgModule({
+>    imports: [ NgxUniversalDropdownModule ],
+>    ...
+>})
 
-## Publishing
+Add dropdown component to your template:
 
-After building your library with `ng build ngx-universal-dropdown`, go to the dist folder `cd dist/ngx-universal-dropdown` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-universal-dropdown` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+><ngx-universal-dropdown
+    (onMultiSelectEvent)="onMultiSelectEvent($event)"
+    (onSingleSelectEvent)="onSingleSelectEvent($event)"
+    [disabled]="false"
+    [multiSelect]="true"
+    [onHover]="true"
+    icon="../assets/icon.svg"
+    [options]="['First', 'Second', 'Third', 'Fourth']"
+    [values]="[1, 2, 3, 4]"
+    >
+    Dropdown
+  </ngx-universal-dropdown>

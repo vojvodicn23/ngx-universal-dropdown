@@ -1,0 +1,14 @@
+<div style="width: 300px; margin-top: 30px; margin-left: 50px;">
+  <ngx-universal-dropdown
+    (onMultiSelectEvent)="onMultiSelectEvent($event)"
+    (onSingleSelectEvent)="onSingleSelectEvent($event)"
+    [disabled]="false"
+    [multiSelect]="true"
+    [onHover]="true"
+    icon="../assets/icon.svg"
+    [options]="['First', 'Second', 'Third', 'Fourth']"
+    [values]="[1, 2, 3, 4]"
+    >
+    Dropdown
+  </ngx-universal-dropdown>
+</div>
