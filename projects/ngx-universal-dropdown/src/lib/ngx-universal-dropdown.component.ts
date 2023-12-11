@@ -2,14 +2,9 @@ import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnChanges, O
 import { NgxUniversalDropdownDirective } from './ngx-universal-dropdown.directive';
 
 @Component({
-  selector: 'lib-ngx-universal-dropdown',
-  template: `
-    <p>
-      ngx-universal-dropdown works!
-    </p>
-  `,
-  styles: [
-  ]
+  selector: 'ngx-universal-dropdown',
+  templateUrl: './ngx-universal-dropdown.component.html',
+  styleUrls: ['./ngx-universal-dropdown.component.css']
 })
 export class NgxUniversalDropdownComponent implements OnChanges, AfterViewInit {
 

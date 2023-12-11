@@ -7,6 +7,10 @@
     "name": "Nikola Vojvodic",
     "email": "vojvodicn23@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vojvodicn23/ngx-universal-dropdown"
+  },
 
   "peerDependencies": {
     "@angular/common": "^16.2.0",
