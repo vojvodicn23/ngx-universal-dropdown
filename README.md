@@ -5,21 +5,23 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 ## Usage
 
 Add the package as a dependency to your project using:
-> npm install ngx-universal-dropdown
+    npm install ngx-universal-dropdown
 
 Add module to you app.module imports:
 
->import { NgxUniversalDropdownModule } from 'ngx-universal-dropdown';
->...
->
->@NgModule({
->    imports: [ NgxUniversalDropdownModule ],
->    ...
->})
+```typescript
+import { NgxUniversalDropdownModule } from 'ngx-universal-dropdown';
+...
+@NgModule({
+    imports: [ NgxUniversalDropdownModule ],
+    ...
+})
+```
 
 Add dropdown component to your template:
 
-><ngx-universal-dropdown
+```typescript
+<ngx-universal-dropdown
     (onMultiSelectEvent)="onMultiSelectEvent($event)"
     (onSingleSelectEvent)="onSingleSelectEvent($event)"
     [disabled]="false"
@@ -30,4 +32,5 @@ Add dropdown component to your template:
     [values]="[1, 2, 3, 4]"
     >
     Dropdown
-  </ngx-universal-dropdown>
+</ngx-universal-dropdown>
+  ```
