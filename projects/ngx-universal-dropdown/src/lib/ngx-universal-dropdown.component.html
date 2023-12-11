@@ -1,0 +1,21 @@
+<div class="dropdown" ngxDropdownSelect [onHover]="onHover" [multiSelect]="multiSelect">
+    <button
+    [disabled]="disabled"
+    type="button"
+    class="dropdown-button"
+    [class.select-class]="isSelected"
+    >
+        <span class="btn-icon"  [style.background-image]="iconUrl" *ngIf="icon"></span>
+        <ng-content></ng-content>
+        <span class="btn-icon-right"></span>
+    </button>
+
+    <div class="dropdown-content" *ngIf="!disabled" #dropdown>
+      <div *ngFor="let item of data; let i = index" (click)="onSelect(i)"
+      [class.selected]="item.selected"      
+      >
+        {{item.option}}
+      </div>
+
+    </div>
+</div>
