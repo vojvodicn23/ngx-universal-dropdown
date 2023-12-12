@@ -1,7 +1,5 @@
 # Angular Universal Dropdown
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
-
 ## Usage
 
 Add the package as a dependency to your project using:

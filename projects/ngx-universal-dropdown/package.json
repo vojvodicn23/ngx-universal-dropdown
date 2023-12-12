@@ -1,6 +1,6 @@
 {
   "name": "ngx-universal-dropdown",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "This is the universal dropdown library for Angular",
   "keywords": ["dropdown", "angular"],
   "author": {
@@ -13,8 +13,8 @@
   },
 
   "peerDependencies": {
-    "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0"
+    "@angular/common": "^16.2.0 || ^17.0.0 || ^15.2.9",
+    "@angular/core": "^16.2.0 || ^17.0.0 || ^15.2.9"
   },
   "dependencies": {
     "tslib": "^2.3.0"
