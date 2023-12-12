@@ -22,12 +22,12 @@ Add dropdown component to your template:
 
 ```typescript
 <ngx-universal-dropdown
-    (onMultiSelectEvent)="onMultiSelectEvent($event)"
-    (onSingleSelectEvent)="onSingleSelectEvent($event)"
-    [disabled]="false"
-    [multiSelect]="true"
-    [onHover]="true"
-    icon="../assets/icon.svg"
+    (onMultiSelectEvent)="onMultiSelectEvent($event)" // active when multiSelect is true
+    (onSingleSelectEvent)="onSingleSelectEvent($event)" // active when multiSelect is false
+    [disabled]="false" // disable dropdown
+    [multiSelect]="true" // when true dropdown is multi-select, otherwise is single-select (default value: false)
+    [onHover]="true" // when true dropdown is opening on hover, otherwise on click (default value: false)
+    icon="../assets/icon.svg" // add icon to the right side of the button - optional
     [options]="['First', 'Second', 'Third', 'Fourth']"
     [values]="[1, 2, 3, 4]"
     >
