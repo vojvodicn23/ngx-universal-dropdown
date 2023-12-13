@@ -9,6 +9,10 @@ Add the package as a dependency to your project using:
 
 ```
 npm install ngx-universal-dropdown
+# or
+pnpm install ngx-universal-dropdown
+# or
+yarn add ngx-universal-dropdown
 ```
 
 Add module to you app.module imports:
