@@ -1,10 +1,13 @@
 # Angular Universal Dropdown
 
-## Usage
+Suported Angular versions: 16 and 17.
 
+## Usage
 Add the package as a dependency to your project using:
 
+```
 npm install ngx-universal-dropdown
+```
 
 Add module to you app.module imports:
 
