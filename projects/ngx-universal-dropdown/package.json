@@ -6,7 +6,8 @@
   "description": "This is the universal dropdown library for Angular",
   "keywords": ["dropdown", "angular"],
   "author": {
-    "name": "Nikola Vojvodic"
+    "name": "Nikola Vojvodic",
+    "url": "https://github.com/vojvodicn23"
   },
   "license": "MIT",
   "repository": {
